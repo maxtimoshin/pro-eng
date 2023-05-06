@@ -542,6 +542,7 @@
 }
 
 .team-block {
+    display: block;
     max-width: 1240px;
     width: 100%;
     position: relative;

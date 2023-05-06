@@ -697,6 +697,7 @@
     .benefits-block {
         margin:0;
     }
+    
 }
 
 @media (max-width: 480px) {
@@ -736,13 +737,14 @@
     .popup-body form button {
         padding: 10px 30px !important;
     }
-}
-
-@media (max-width: 424px) {
     .offer-block {
         background-image: url("../assets/images/about-us-bg-mobile.png");
         height: 1400px;
     }
+}
+
+@media (max-width: 424px) {
+    
     .offer-left {
         gap: 26px;
     }
