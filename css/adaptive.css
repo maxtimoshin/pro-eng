@@ -520,9 +520,9 @@
     .way-to-team-scheme-mobile {
         display: block;
     }
-    .connect-to-team {
+    /* .connect-to-team {
         display: none;
-    }
+    } */
     .way-to-team-block .title {
         font-weight: 900;
         font-size: 26px;
@@ -596,7 +596,7 @@
     .looking-for-block::after {
         font-size: 100px;
         left: 10%;
-        top: 220px;
+        top: 250px;
     }
     .looking-for-req-bg {
         bottom: 360px;
@@ -762,7 +762,7 @@
     .looking-for-block::after {
         font-size: 100px;
         left: 5%;
-        top: 270px;
+        top: 280px;
     }
     .looking-for-req-bg {
         bottom: 350px;
