@@ -43,34 +43,36 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Профі-Центр</title>
   </head>
 
   <body>
     <div class="popup-wrapper">
       <div class="popup-body">
+        <img src="./assets/images/close-cross.png" alt="" class="popup-close-cross">
         <img src="./assets/images/logo.svg" class="logo"></img>
         <div class="title">Карʼєра в Профі-Центр</div>
         <div class="subtitle">Залиште свої дані для співбесіди!</div>
-        <form action="">
+        <form action="./mail.php" method="POST" enctype="multipart/form-data">
           <div>
             <div class="input-item">
               <span>Iм'я</span>
-              <input placeholder="Введіть ім'я" type="text" />
+              <input placeholder="Ваше ім'я" type="text" id="uname"/>
             </div>
             <div class="input-item">
               <span>Прізвище</span>
-              <input placeholder="Введіть прізвище" type="text" />
+              <input placeholder="Ваше прізвище" type="text" id="usurname"/>
             </div>
           </div>
           <div>
             <div class="input-item">
               <span>Номер телефону</span>
-              <input placeholder="Введіть номер телефону" type="text" />
+              <input placeholder="Ваш номер телефону" type="number" id="uphone"/>
             </div>
             <div class="input-item">
               <span>Пошта</span>
-              <input placeholder="Введіть пошту" type="text" />
+              <input placeholder="Email" type="text" id="uemail"/>
             </div>
           </div>
           <div class="drop-file-area">
@@ -87,16 +89,16 @@
       <header class="header">
         <div class="inner-header">
           <div class="header-menu">
-            <a href="" class="logo home-button">
+            <a href="" class="logo home-button" data-aos="fade-right"  data-aos-delay="0">
               <img src="./assets/images/logo.svg" alt="Профі-Центр" />
             </a>
             <ul class="header-nav">
-              <li class="about-us-button"><a>Про нас</a></li>
-              <li class="team-button"><a>Команда</a></li>
-              <li class="vac-button"><a>Вакансії</a></li>
-              <li class="benefits-button"><a>Переваги</a></li>
+              <li class="about-us-button" data-aos="fade-up"  data-aos-delay="100"><a>Про нас</a></li>
+              <li class="team-button" data-aos="fade-up"  data-aos-delay="200"><a>Команда</a></li>
+              <li class="vac-button" data-aos="fade-up"  data-aos-delay="300"><a>Вакансії</a></li>
+              <li class="benefits-button" data-aos="fade-up"  data-aos-delay="400"><a>Переваги</a></li>
             </ul>
-            <a href="tel:+380 (67) 440 47 87" class="header-contacts"
+            <a href="tel:+380 (67) 440 47 87" class="header-contacts" data-aos="fade-left"  data-aos-delay="500"
               >+380 (67) 440 47 87</a
             >
             <div class="burger-menu">
@@ -124,16 +126,22 @@
                 width="185"
                 src="./assets/images/header-left-block1.png"
                 alt=""
+                data-aos-delay="300"
+                data-aos="zoom-in"
               />
               <img
                 width="60"
                 src="./assets/images/header-left-block2.png"
                 alt=""
+                data-aos-delay="200"
+                data-aos="zoom-in"
               />
               <img
                 width="45"
                 src="./assets/images/header-left-block3.png"
                 alt=""
+                data-aos-delay="100"
+                data-aos="zoom-in"
               />
             </div>
             <div class="right-header-tiles-block">
@@ -141,16 +149,22 @@
                 width="288"
                 src="./assets/images/header-right-block1.png"
                 alt=""
+                data-aos-delay="300"
+                data-aos="zoom-in"
               />
               <img
                 width="78"
                 src="./assets/images/header-right-block2.png"
                 alt=""
+                data-aos-delay="200"
+                data-aos="zoom-in"
               />
               <img
                 width="42"
                 src="./assets/images/header-right-block3.png"
                 alt=""
+                data-aos-delay="100"
+                data-aos="zoom-in"
               />
             </div>
             <img
@@ -158,10 +172,10 @@
               class="header-content-bg"
             />
             <div class="header-content-title">
-              <div class="header-content-title-top">
+              <div class="header-content-title-top" data-aos="fade-right" data-aos-delay="100">
                 Побудуй <span>карʼєру</span>
               </div>
-              <div class="header-content-title-bottom">
+              <div class="header-content-title-bottom" data-aos="fade-left" data-aos-delay="200">
                 <button class="register-button">Приєднатись до команди</button>в Профі-Центр
               </div>
             </div>
@@ -171,27 +185,35 @@
       <main class="main">
         <div class="inner-main">
           <div class="about-us-block">
-            <div class="about-us-title">Про нас:</div>
+            <div class="about-us-title" data-aos="fade-up">Про нас:</div>
             <div class="about-us-slides">
               <img
                 src="./assets/images/about-us-slide1.png"
                 class="about-us-slide about-us-slide1"
                 alt=""
+                data-aos="zoom-in"
+                data-aos-delay="100"
               />
               <img
                 src="./assets/images/about-us-slide2.png"
                 class="about-us-slide about-us-slide2"
                 alt=""
+                data-aos="zoom-in"
+                data-aos-delay="200"
               />
               <img
                 src="./assets/images/about-us-slide3.png"
                 class="about-us-slide about-us-slide3"
                 alt=""
+                data-aos="zoom-in"
+                data-aos-delay="300"
               />
               <img
                 src="./assets/images/about-us-slide4.png"
                 class="about-us-slide about-us-slide4"
                 alt=""
+                data-aos="zoom-in"
+                data-aos-delay="400"
               />
             </div>
             <img
@@ -232,7 +254,7 @@
             </div>
           </div>
           <div class="method-block">
-            <div class="method-title">
+            <div class="method-title" data-aos="fade-up">
               Хочеш викладати<br />
               сучасну англійську?
             </div>
@@ -241,6 +263,7 @@
                 src="./assets/images/method-stripes.png"
                 alt=""
                 class="method-stripes"
+                data-aos="zoom-in"
               />
               <div class="method-video">
                 <!-- <img src="./assets/images/method-video-mock.webp" alt="" /> -->
@@ -251,29 +274,29 @@
               </div>
               <div class="method-information">
                 <div class="method-information-main">
-                  <p>
+                  <p data-aos="fade-up">
                     Більше про метод ти дізнаєшся на стажуванні, але ключове,<br />
                     що
                     <span>варто знати:</span>
                   </p>
                   <ul>
-                    <li>Суть методу — інтервальні повторення</li>
-                    <li>80% заняття — speaking</li>
-                    <li>Зручна платформа для онлайн-занять</li>
-                    <li>Підготовка до заняття займає менше 15 хвилин</li>
+                    <li data-aos="fade-left">Суть методу — інтервальні повторення</li>
+                    <li data-aos="fade-left">80% заняття — speaking</li>
+                    <li data-aos="fade-left">Зручна платформа для онлайн-занять</li>
+                    <li data-aos="fade-left">Підготовка до заняття займає менше 15 хвилин</li>
                   </ul>
                 </div>
                 <div class="method-information-grid">
-                  <div class="method-grid-item1 method-grid-item">
+                  <div class="method-grid-item1 method-grid-item" data-aos="fade-up">
                     комунікативний метод
                   </div>
-                  <div class="method-grid-item2 method-grid-item">
+                  <div class="method-grid-item2 method-grid-item" data-aos="fade-up">
                     без домашніх завдань
                   </div>
-                  <div class="method-grid-item3 method-grid-item">
+                  <div class="method-grid-item3 method-grid-item" data-aos="fade-up">
                     на основі інтервальних повторень
                   </div>
-                  <div class="method-grid-item4 method-grid-item">
+                  <div class="method-grid-item4 method-grid-item" data-aos="fade-up">
                     діалог — як основний інструмент навчання
                   </div>
                 </div>
@@ -285,40 +308,40 @@
               <div class="offer-left">
                 <div class="offer-title">Що ми пропонуємо?</div>
                 <ul class="offers-left">
-                  <li class="offer-item">
+                  <li class="offer-item" data-aos="fade-up">
                     <span>працюй</span>як тобі зручно! В офісі / повний ремоут /
                     комбіновано
                   </li>
-                  <li class="offer-item">
+                  <li class="offer-item" data-aos="fade-up">
                     <span>стабільне</span>завантаження — більше не потрібно
                     шукати студентів самому
                   </li>
-                  <li class="offer-item">
+                  <li class="offer-item" data-aos="fade-up">
                     <span>Унікальна</span>онлайн-платформа та електронні журнали
                   </li>
-                  <li class="offer-item">
+                  <li class="offer-item" data-aos="fade-up">
                     <span>самостійно</span>формуй свій дохід збільшуючи чи
                     зменшуючи кількість занять
                   </li>
                 </ul>
               </div>
               <ul class="offers-right">
-                <li class="offer-item">
+                <li class="offer-item" data-aos="fade-up">
                   <span>офіційне</span>працевлаштування
                 </li>
-                <li class="offer-item">
+                <li class="offer-item" data-aos="fade-up">
                   <span>оплачувана</span>відпустка 24 дні на рік
                 </li>
-                <li class="offer-item">
+                <li class="offer-item" data-aos="fade-up">
                   <span>своєчасна</span>оплата два рази на місяць
                 </li>
-                <li class="offer-item">
+                <li class="offer-item" data-aos="fade-up">
                   <span>безкоштовне</span>навчання методу
                 </li>
-                <li class="offer-item"><span>зручний</span>графік роботи</li>
+                <li class="offer-item" data-aos="fade-up"><span>зручний</span>графік роботи</li>
               </ul>
             </div>
-            <button class="offer-button register-button">Cтати викладачем</button>
+            <button class="offer-button register-button" data-aos="zoom-in">Cтати викладачем</button>
           </div>
           <div class="team-block">
             <div class="swiper mySwiper1">
@@ -338,10 +361,10 @@
                     class="team-slide-button"
                   />
                   <div class="team-slide-bottom">
-                    <span
+                    <span data-aos="fade-up"
                       >Заступник директора із навчально-методичної діяльності.
                     </span>
-                    <span
+                    <span data-aos="fade-up"
                       >Вища освіта: філолог, викладач англійської мови та
                       літератури</span
                     >
@@ -363,8 +386,8 @@
                     class="team-slide-button"
                   />
                   <div class="team-slide-bottom">
-                    <span>Старший викладач, методист</span>
-                    <span>
+                    <span data-aos="fade-up">Старший викладач, методист</span>
+                    <span data-aos="fade-up"> 
                       Вища освіта: філолог, викладач англійської мови та літератури</span
                     >
                     
@@ -385,8 +408,8 @@
                     class="team-slide-button"
                   />
                   <div class="team-slide-bottom">
-                    <span>Старший викладач, методист</span>
-                    <span
+                    <span data-aos="fade-up">Старший викладач, методист</span>
+                    <span data-aos="fade-up"
                       >Вища освіта: філолог, викладач англійської мови та літератури</span
                     >              
                   </div>
@@ -405,8 +428,8 @@
                     class="team-slide-button"
                   />
                   <div class="team-slide-bottom">
-                    <span>Старший викладач, методист</span>
-                    <span
+                    <span data-aos="fade-up">Старший викладач, методист</span>
+                    <span data-aos="fade-up"
                       >Вища освіта: філолог, викладач англійської мови та літератури</span
                     >                   
                   </div>
@@ -425,8 +448,8 @@
                     class="team-slide-button"
                   />
                   <div class="team-slide-bottom">
-                    <span>Старший викладач, методист</span>
-                    <span
+                    <span data-aos="fade-up">Старший викладач, методист</span>
+                    <span  data-aos="fade-up"
                       >Вища освіта: Міжнародна<br />
                       економіка</span
                     >                   
@@ -437,16 +460,16 @@
             <div class="swiper-pagination1"></div>
           </div>
           <div class="profi-center-block">
-            <div class="profi-center-title">
+            <div class="profi-center-title" data-aos="fade-left">
               Профі-<br />
               центр
             </div>
-            <div class="profi-center-content">
-              <span
+            <div class="profi-center-content" >
+              <span data-aos="fade-left"
                 >Акредитована школа Callan Method в Україні з вивчення
                 англійської мови</span
               >
-              <p>
+              <p data-aos="fade-left">
                 Ми — молода, драйвова та успішна компанія із сильною
                 корпоративною культурою радо запрошуємо у нашу команду нових
                 <span>ВИКЛАДАЧІВ АНГЛІЙСЬКОЇ.</span>
@@ -454,7 +477,7 @@
             </div>
           </div>
           <div class="looking-for-block">
-            <div class="looking-for-title">
+            <div class="looking-for-title" data-aos="fade-up">
               Кого<br />
               ми шукаємо?
             </div>
@@ -464,7 +487,7 @@
                   <div class="tiles">
                     <img src="./assets/images/slider-tile.png" alt="" />
                   </div>
-                  <p>
+                  <p data-aos="zoom-in">
                     Якщо Ти любиш навчати та цим приносити користь, а вміння
                     ділитися знаннами вважаєш своїм достоїнством, тоді Тобі до
                     нас!
@@ -475,7 +498,7 @@
                     <img src="./assets/images/slider-tile.png" alt="" />
                     <img src="./assets/images/slider-tile.png" alt="" />
                   </div>
-                  <p>
+                  <p data-aos="zoom-in">
                     Якщо у Тебе є досвід <span>у викладанні</span> або принаймні
                     бажання цим займатися,
                     <span>готовий до нових викликів</span> та освоєння нової
@@ -487,21 +510,21 @@
             <div class="swiper-pagination2"></div>
           </div>
           <div class="looking-for-req-block">
-            <div class="looking-for-req-title">Нам потрібна людина,</div>
+            <div class="looking-for-req-title" data-aos="fade-up">Нам потрібна людина,</div>
             <ul class="looking-for-reqs">
-              <li>
+              <li data-aos="fade-left">
                 проводити заняття для груп та індивідуальних клієнтів<br />
                 англійською мовою <span>за методом Каллана</span>
               </li>
-              <li>
+              <li data-aos="fade-left">
                 записувати проведені заняття<br />
                 у <span>спеціальний мобільний додаток</span>
               </li>
-              <li>
+              <li data-aos="fade-left">
                 <span>тестувати клієнтів</span> з метою<br />
                 визначення їх рівня знань
               </li>
-              <li>проводити <span>розмовні клуби</span></li>
+              <li data-aos="fade-left">проводити <span>розмовні клуби</span></li>
             </ul>
             <div class="looking-for-req-bg">
               Яка<br />
@@ -510,7 +533,7 @@
           </div>
           <div class="animated-block">
             <div class="inner-animated-block">
-              <div class="title">
+              <div class="title" data-aos="zoom-in">
                 Якщо викладати англійську —<br />
                 Твоє покликання, хочеш бачити прогрес та захоплення в очах своїх
                 учнів — хутчіш надсилай своє резюме!
@@ -525,54 +548,54 @@
             </div>
           </div>
           <div class="benefits-block">
-            <div class="title">Чому тобі буде класно з нами?</div>
-            <div class="sub-title">Тому що МИ пропонуємо:</div>
+            <div class="title" data-aos="fade-up">Чому тобі буде класно з нами?</div>
+            <div class="sub-title" data-aos="fade-up">Тому що МИ пропонуємо:</div>
             <div class="swiper mySwiper3">
               <div class="swiper-wrapper">
                 <div class="swiper-slide benefits-slide">
-                  <img src="./assets/images/money-icon.svg" alt="" />
-                  <span
+                  <img src="./assets/images/money-emoji.png" alt="" data-aos="zoom-in" />
+                  <span data-aos="fade-up"
                     >заробітну плату 25000−35000 грн. (залежить від кількості
                     проведених занять та терміну роботи в компанії);</span
                   >
                 </div>
                 <div class="swiper-slide benefits-slide">
-                  <img src="./assets/images/ok-emoji-icon.webp" style="width:50px; height: 60px;" alt="" />
-                  <span
+                  <img src="./assets/images/ok-emoji.png" alt="" data-aos="zoom-in"/>
+                  <span data-aos="fade-up"
                     >виплати заробітньої плати 2 рази на місяць без
                     затримок;</span
                   >
                 </div>
                 <div class="swiper-slide benefits-slide">
-                  <img src="./assets/images/calenadar-icon.svg" alt="" />
-                  <span
+                  <img src="./assets/images/hands-emoji.png" alt="" data-aos="zoom-in"/>
+                  <span data-aos="fade-up"
                     >зручкий графік роботи: з Пн до Пт, від 2 до 4 занять в
                     день, Сб і Нд — вихідні.</span
                   >
                 </div>
                 <div class="swiper-slide benefits-slide">
-                  <img src="./assets/images/cup-icon.svg" alt="" />
-                  <span
+                  <img src="./assets/images/relax-emiji.png" alt="" data-aos="zoom-in"/>
+                  <span data-aos="fade-up"
                     >затишний офіс в центрі міста, запашну каву та чай;</span
                   >
                 </div>
                 <div class="swiper-slide benefits-slide">
-                  <img src="./assets/images/gift-icon.png" alt="" />
-                  <span
+                  <img src="./assets/images/present-emoji.png" alt="" data-aos="zoom-in"/>
+                  <span data-aos="fade-up"
                     >різноманітні корпоративні заходи, подарунки для
                     співробітників;</span
                   >
                 </div>
                 <div class="swiper-slide benefits-slide">
-                  <img src="./assets/images/diamond-icon.png" alt="" />
-                  <span
+                  <img src="./assets/images/diamond-emoji.png" alt="" data-aos="zoom-in"/>
+                  <span data-aos="fade-up"
                     >безкоштовне навчання та тренінги з викладання за методом
                     Каллана;</span
                   >
                 </div>
                 <div class="swiper-slide benefits-slide benefits-custom-slide">
-                  <img src="./assets/images/flames-goup.png" alt="" />
-                  <span
+                  <img src="./assets/images/flames-goup.png" alt="" data-aos="zoom-in"/>
+                  <span data-aos="fade-up"
                     >у нас ТИ знайдеш дружній колектив, професійний ріст та
                     розвиток.</span
                   >
@@ -583,23 +606,23 @@
           </div>
           <div class="resume-block">
             <div class="requirements-block">
-              <div class="title">Ця вакансія точно для тебе, якщо ти:</div>
+              <div class="title" data-aos="fade-up">Ця вакансія точно для тебе, якщо ти:</div>
               <ul class="requirements-list">
-                <li>
+                <li data-aos="fade-left">
                   Маєш або здобуваєш відповідну <span>профільну освіту</span>
                 </li>
-                <li>володієш англійською мовою на рівні <span>від С1</span></li>
-                <li>
+                <li data-aos="fade-left">володієш англійською мовою на рівні <span>від С1</span></li>
+                <li data-aos="fade-left">
                   не обов’язково маєш досвід роботи,
                   <span>головне — бажання навчатися і розвиватися!</span>
                 </li>
               </ul>
             </div>
             <div class="send-resume-block">
-              <div class="title">
+              <div class="title" data-aos="fade-up">
                 Якщо відчуваєш, що нам по дорозі, відгукнись на цю вакансію
               </div>
-              <button class="send-resume-button register-button">Залишити резюме</button>
+              <button class="send-resume-button register-button" data-aos="zoom-in">Залишити резюме</button>
               <img
                 src="./assets/images/send-resume-image.webp"
                 alt=""
@@ -619,8 +642,8 @@
               class="corporate-stripes-mobile"
             />
             <div class="corporate-content">
-              <span>До речі</span>
-              <p>
+              <span data-aos="zoom-in">До речі</span>
+              <p data-aos="fade-up">
                 Ми вже згадували, що дуже полюбляємо зустрічатись.<br />Переглянь
                 відео, щоб побачити, які ми на Корпоративі :)
               </p>
@@ -628,27 +651,27 @@
               <iframe style="width: 100%; min-height: 300px;" src="https://www.youtube-nocookie.com/embed/l607Fg-zJIs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div class="work-reasons-block">
-            <div class="title">Ще 5 причин працювати з нами:</div>
+            <div class="title" data-aos="fade-up">Ще 5 причин працювати з нами:</div>
             <ul class="reasons-list">
               <li>
-                <div class="reason-label">
+                <div class="reason-label" data-aos="fade-left">
                   <img
                     src="./assets/images/number1.png"
                     alt=""
                     class="reason-number"
                   />
-                  <span class="reason-title"
+                  <span class="reason-title" 
                     >Стабільний дохід для викладачів</span
                   >
                 </div>
-                <p class="reason-text">
+                <p class="reason-text" data-aos="fade-right">
                   Пропонуємо високу заробітну плату, роботу онлайн або офлайн
                   в самому центрі міста з неймовірною командою! Запашну каву
                   та різноманітні смаколики. Приєднуйся до нас та приходь на роботу із задоволенням.
                 </p>
               </li>
               <li>
-                <div class="reason-label">
+                <div class="reason-label" data-aos="fade-left">
                   <img
                     src="./assets/images/number2.png"
                     alt=""
@@ -658,14 +681,14 @@
                     >Безкоштовний інтенсив Callan Method</span
                   >
                 </div>
-                <p class="reason-text">
+                <p class="reason-text" data-aos="fade-right">
                   За тиждень ми навчимо тебе особливостей всесвітньо- поширеного
                   методу, випробуваного часом та досвідом тисяч викладачів і
                   студентів. Стань частинкою всесвітньої Callan community.
                 </p>
               </li>
               <li>
-                <div class="reason-label">
+                <div class="reason-label" data-aos="fade-left">
                   <img
                     src="./assets/images/number3.png"
                     alt=""
@@ -675,14 +698,14 @@
                     >Підтримка з першого робочого дня</span
                   >
                 </div>
-                <p class="reason-text">
+                <p class="reason-text" data-aos="fade-right">
                   Наші найдосвідченіші методисти познайомлять тебе зі світом
                   Callan та зроблять усе, щоб допомогти тобі стати справжнім
                   профі.
                 </p>
               </li>
               <li>
-                <div class="reason-label">
+                <div class="reason-label" data-aos="fade-left">
                   <img
                     src="./assets/images/number4.png"
                     alt=""
@@ -690,13 +713,13 @@
                   />
                   <span class="reason-title">Ніякої паперової роботи</span>
                 </div>
-                <p class="reason-text">
+                <p class="reason-text" data-aos="fade-right">
                   Все, що потрібно — на одній онлайн платформі та в електроних
                   книгах. Потрібні лише ноутбук та швидкий інтернет.
                 </p>
               </li>
               <li>
-                <div class="reason-label">
+                <div class="reason-label" data-aos="fade-left">
                   <img
                     src="./assets/images/number5.png"
                     alt=""
@@ -706,7 +729,7 @@
                     >Можливості для всестороннього розвитку</span
                   >
                 </div>
-                <p class="reason-text">
+                <p class="reason-text" data-aos="fade-right">
                   Ми підтримуємо викладачів, що прагнуть розвиватись! У нас Ти
                   реалізуєш свій потенціал, бо зможеш поєднувати різні ролі:
                   викладача та ментора, методиста та організатора розмовних
@@ -716,46 +739,48 @@
             </ul>
           </div>
           <div class="way-to-team-block">
-            <div class="title">Шлях до команди</div>
+            <div class="title" data-aos="fade-up">Шлях до команди</div>
             <img
               src="./assets//images/way-to-team-scheme.png"
               alt=""
               class="way-to-team-scheme"
+              data-aos="zoom-in"
             />
             <img
               src="./assets/images/way-to-team-mobile.svg"
               class="way-to-team-scheme-mobile"
               alt=""
+              data-aos="zoom-in"
             />
-            <button class="connect-to-team register-button">Приєднатись до команди</button>
+            <button class="connect-to-team register-button" data-aos="zoom-in">Приєднатись до команди</button>
           </div>
           <div class="instagram-block">
-            <div class="title">Підписуйся на наш інстаграм</div>
+            <div class="title" data-aos="fade-up">Підписуйся на наш інстаграм</div>
             <div class="instagram-tiles">
-              <img src="./assets/images/instagram-tile-1.webp" loading="lazy" alt="" />
-              <img src="./assets/images/instagram-tile-2.webp" loading="lazy" alt="" />
-              <img src="./assets/images/instagram-tile-3.webp" loading="lazy" alt="" />
+              <img src="./assets/images/instagram-tile-1.webp" loading="lazy" alt="" data-aos="zoom-in" data-aos-delay="100"/>
+              <img src="./assets/images/instagram-tile-2.webp" loading="lazy" alt="" data-aos="zoom-in" data-aos-delay="200"/>
+              <img src="./assets/images/instagram-tile-3.webp" loading="lazy" alt="" data-aos="zoom-in" data-aos-delay="300"/>
             </div>
           </div>
         </div>
       </main>
       <footer class="footer">
         <div class="social">
-          <a href=""
-            ><img src="./assets/images/instagram-icon.svg" alt=""
+          <a href=""  
+            ><img data-aos="zoom-in" data-aos-delay="100" src="./assets/images/instagram-icon.svg" alt=""
           /></a>
-          <a href=""
-            ><img src="./assets/images/facebook-icon.svg" alt=""
+          <a href=""  
+            ><img data-aos="zoom-in" data-aos-delay="200" src="./assets/images/facebook-icon.svg" alt=""
           /></a>
         </div>
         <div class="inner-footer">
           <div class="footer-tiles">
-            <img src="./assets/images/British_Council.svg" alt="" />
-            <img src="./assets//images/Callan.svg" alt="" />
-            <img src="./assets/images/Cambridge_English.svg" alt="" />
+            <img src="./assets/images/British_Council.svg" alt=""  data-aos="zoom-in" data-aos-delay="100"/>
+            <img src="./assets//images/Callan.svg" alt=""  data-aos="zoom-in" data-aos-delay="200"/>
+            <img src="./assets/images/Cambridge_English.svg" alt=""  data-aos="zoom-in" data-aos-delay="300"/>
           </div>
           <div class="footer-contacts">
-            <a class="phone" href="tel:+380 (67) 440 47 87">+380 (67) 440 47 87</a>
+            <a class="phone" href="tel:+380 (67) 440 47 87" data-aos="fade-left" data-aos-offset="0">+380 (67) 440 47 87</a>
           </div>
         </div>
       </footer>
@@ -848,5 +873,9 @@
         },
       });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>

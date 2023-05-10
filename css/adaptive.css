@@ -593,13 +593,20 @@
     .profi-center-block::after {
         width: 60%;
     }
+    .looking-for-block {
+        gap:100px;
+    }
+    .swiper-pagination2 {
+        margin-top:0 !important;
+    }
     .looking-for-block::after {
         font-size: 100px;
         left: 10%;
-        top: 250px;
+        top: 20px;
     }
     .looking-for-req-bg {
-        bottom: 360px;
+        /* bottom: 330px; */
+        top:34px;
         font-size: 120px;
     }
     .animated-block .title {
@@ -682,8 +689,11 @@
         padding: 20px 40px !important;
     }
     .header-menu {
-        height: 120px;
+        height: 100px;
         margin:0 0 34px 0;
+    }
+    .header-menu-fixed {
+        height: 70px;
     }
     .header {
         margin:0 16px 32px 16px;
@@ -726,7 +736,7 @@
         max-width: 100%;
     }
     .popup-body .input-item input {
-        height: 40px;
+        height: 50px;
     }
     .drop-file-area {
         height: 140px !important;
@@ -740,6 +750,9 @@
     .offer-block {
         background-image: url("../assets/images/about-us-bg-mobile.png");
         height: 1400px;
+    }
+    .input-item span {
+        display: none;
     }
 }
 
@@ -762,12 +775,13 @@
     .looking-for-block::after {
         font-size: 100px;
         left: 5%;
-        top: 280px;
+        top: 20px;
     }
     .looking-for-req-bg {
-        bottom: 350px;
+        /* bottom: 350px; */
+        top:65px;
         left: 14px;
-        font-size: 115px;
+        font-size: 100px;
     }
     .corporate-content span {
         font-size: 100px;

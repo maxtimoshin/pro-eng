@@ -2,6 +2,10 @@
 const iconMenu = document.querySelector('.menu-icon')
 const menuBody = document.querySelector('.menu-body')
 
+// Header Scrolling Position
+let scrollOff = window.pageYOffset
+let fixedHeader = document.querySelector('.header-menu')
+
 // Scroll To Buttons 
 const homeBtn = document.querySelectorAll('.home-button')
 const aboutUsBtn = document.querySelectorAll('.about-us-button')
@@ -17,7 +21,7 @@ const vacBlock = document.querySelector('.resume-block')
 const benefitsBlock = document.querySelector('.benefits-block')
 
 // Popup
-
+const closeCross = document.querySelector('.popup-close-cross')
 const popup = document.querySelector('.popup-wrapper')
 const popupBody = document.querySelector('.popup-body')
 
@@ -25,10 +29,13 @@ const popupBody = document.querySelector('.popup-body')
 const sliderButtons = document.querySelectorAll('.team-slide-button')
 
 // Register button 
-
 const registerButtons = document.querySelectorAll('.register-button')
 
 // Popup handler
+
+closeCross.addEventListener('click', ()=> {
+    popup.classList.toggle('show-popup')
+})
 
 if (registerButtons) {
     registerButtons.forEach(e => {
@@ -48,7 +55,7 @@ document.addEventListener('click', (e) => {
 function scrollingToBlock(btn, block) {
     btn.forEach(e => {
         e.addEventListener('click', () => {
-            block.scrollIntoView({ block: "start", behavior: "smooth" })
+            block.scrollIntoView({ block: "center", behavior: "smooth" })
             document.body.classList.remove('lock')
             iconMenu.classList.remove('activem')
             menuBody.classList.remove('activem')
@@ -81,3 +88,13 @@ if (iconMenu) {
         menuBody.classList.toggle('activem')
     })
 }
+
+// Header Scrolling Handler
+scrollOff = 0
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 150) {
+        fixedHeader.classList.add('header-menu-fixed')
+    } else {
+        fixedHeader.classList.remove('header-menu-fixed')
+    }
+})
