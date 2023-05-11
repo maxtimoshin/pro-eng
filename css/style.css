@@ -129,6 +129,34 @@ input[type="number"] {
     z-index: 999999;
 }
 
+.popup-close-cross-body {
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+.popup-close-cross-body::before {
+    position: absolute;
+    top:50%;
+    left:50%;
+    content: "";
+    width:32px;
+    border-radius: 5px;
+    height: 3px;
+    background:#404040;
+    transform:translate(-50%, -50%) rotate(45deg);
+}
+.popup-close-cross-body::after {
+    position: absolute;
+    top:50%;
+    left:50%;
+    content: "";
+    width:32px;
+    border-radius: 5px;
+    height: 3px;
+    background:#404040;
+    transform:translate(-50%, -50%) rotate(-45deg);
+}
+
 .popup-close-cross:hover {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);

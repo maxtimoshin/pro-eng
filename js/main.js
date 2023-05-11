@@ -35,9 +35,13 @@ const registerButtons = document.querySelectorAll('.register-button')
 
 // Popup handler
 
-closeCross.addEventListener('click', ()=> {
-    popup.classList.toggle('show-popup')
-})
+
+if (closeCross) {
+    closeCross.addEventListener('click', ()=> {
+        popup.classList.toggle('show-popup')
+    })
+}
+
 
 if (registerButtons) {
     registerButtons.forEach(e => {
@@ -47,11 +51,15 @@ if (registerButtons) {
     })
 }
 
-document.addEventListener('click', (e) => {
-    if(e.target === popup) {
-        popup.classList.toggle('show-popup')
-    }
-})
+
+if (popup) {
+    document.addEventListener('click', (e) => {
+        if(e.target === popup) {
+            popup.classList.toggle('show-popup')
+        }
+    })
+}
+
 
 // Scroll To Handler
 function scrollingToBlock(btn, block) {
@@ -99,15 +107,4 @@ window.addEventListener('scroll', () => {
     } else {
         fixedHeader.classList.remove('header-menu-fixed')
     }
-})
-
-// Form handler
-// submitBtn.addEventListener('click', () => {
-//     submitBtn.preventDefault();
-//     form.addEventListener
-// })
-
-form.addEventListener('submit', (e) => {
-    console.log('submitted')
-    // e.preventDefault();
 })
