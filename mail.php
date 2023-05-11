@@ -9,21 +9,22 @@
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\SMTP;
 	use PHPMailer\PHPMailer\Exception;
-	$mail = new PHPMailer();
-	$mail->SMTPDebug  = 2; 
-	$mail->Host = "localhost";
-	$mail->SMTPAuth = false;
-	$mail->Port = 25;
+	$mail = new PHPMailer(true);
+	$mail->isSMTP();
+	$mail->Host = 'smtp.gmail.com';
+	$mail->SMTPAuth = true;
+	$mail->Username = 'hr.proficentr@gmail.com';
+	$mail->Password = 'qlppgnkreykltpmg';
+	$mail->SMTPSecure = 'ssl';
+	$mail->Port = 465;
+	// $mail->SMTPDebug  = 2; 
 	$mail->Subject = "Resume apply";
-	$mail->setFrom("maxtimoshin94@gmail.com");
+	$mail->setFrom("hr.proficentr@gmail.com");
 	$mail->isHTML(true);
-	// $mail->AddAttachment($_FILES['attachFile']['tmp_name'], $_FILES['attachFile']['name']);
+	$mail->AddAttachment($_FILES['attachFile']['tmp_name'], $_FILES['attachFile']['name']);
 	$mail->Body = "Name: $name<br> Surname: $surname<br> Email: $email<br> Phone: $phone<br>";
 	$mail->WordWrap = 50; 
-	$mail->addAddress("maxtimoshin94@gmail.com");
-	if ( $mail->send() ) {
-		echo "Email Sent..!";
-	}else{
-		echo "Message could not be sent. Mailer Error:";
-	}
+	$mail->addAddress("hr.proficentr@gmail.com");
 	$mail->smtpClose();
+
+	?>

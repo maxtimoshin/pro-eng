@@ -54,34 +54,34 @@
         <img src="./assets/images/logo.svg" class="logo"></img>
         <div class="title">Карʼєра в Профі-Центр</div>
         <div class="subtitle">Залиште свої дані для співбесіди!</div>
-        <form action="./mail.php" method="POST" enctype="multipart/form-data">
+        <form action="./mail.php" method="POST" enctype="multipart/form-data" class="form">
           <div>
             <div class="input-item">
               <span>Iм'я</span>
-              <input placeholder="Ваше ім'я" type="text" id="uname"/>
+              <input placeholder="Ваше ім'я" type="text" id="uname" name="uname"/>
             </div>
             <div class="input-item">
               <span>Прізвище</span>
-              <input placeholder="Ваше прізвище" type="text" id="usurname"/>
+              <input placeholder="Ваше прізвище" type="text" id="usurname" name="usurname"/>
             </div>
           </div>
           <div>
             <div class="input-item">
               <span>Номер телефону</span>
-              <input placeholder="Ваш номер телефону" type="number" id="uphone"/>
+              <input placeholder="Ваш номер телефону" type="number" id="uphone" name="uphone"/>
             </div>
             <div class="input-item">
               <span>Пошта</span>
-              <input placeholder="Email" type="text" id="uemail"/>
+              <input placeholder="Email" type="text" id="uemail" name="uemail"/>
             </div>
           </div>
           <div class="drop-file-area">
             <img src="./assets/images/drop-file-icon.svg" alt="">
             <p><span>Перетягніть ваше резюме сюди</span> <br>
               або натисніть, щоб завантажити файл</p>
-            <input type="file" class="file"/>
+            <input type="file" class="file" id="attachFile" name="attachFile"/>
           </div>
-          <button type="submit">Відправити</button>
+          <button type="submit" class="form-submit-button">Відправити</button>
         </form>
       </div>
     </div>

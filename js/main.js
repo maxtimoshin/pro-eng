@@ -24,6 +24,8 @@ const benefitsBlock = document.querySelector('.benefits-block')
 const closeCross = document.querySelector('.popup-close-cross')
 const popup = document.querySelector('.popup-wrapper')
 const popupBody = document.querySelector('.popup-body')
+const form = document.querySelector('.form')
+const submitBtn = document.querySelector('.form-submit-button')
 
 // Slider button 
 const sliderButtons = document.querySelectorAll('.team-slide-button')
@@ -97,4 +99,15 @@ window.addEventListener('scroll', () => {
     } else {
         fixedHeader.classList.remove('header-menu-fixed')
     }
+})
+
+// Form handler
+// submitBtn.addEventListener('click', () => {
+//     submitBtn.preventDefault();
+//     form.addEventListener
+// })
+
+form.addEventListener('submit', (e) => {
+    console.log('submitted')
+    // e.preventDefault();
 })
