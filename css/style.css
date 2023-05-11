@@ -32,13 +32,13 @@ body.lock {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+input[type="number"] {
+    -moz-appearance: textfield;
 }
 
 .wrapper {
@@ -112,7 +112,7 @@ input[type=number] {
     flex-direction: column;
     padding: 40px 100px;
     position: relative;
-    margin:0 16px;
+    margin: 0 16px;
 }
 
 .popup-close-cross {
@@ -122,10 +122,16 @@ input[type=number] {
     right: 20px;
     cursor: pointer;
     width: 26px;
-    transition:all 0.3s;
+    height: 26px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 999999;
 }
 
 .popup-close-cross:hover {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
@@ -219,7 +225,7 @@ input[type=number] {
 .input-item input {
     width: 100%;
     max-width: 300px;
-    height: 56px ;
+    height: 56px;
     border: none;
     outline: none;
     background: #fff7ea;
@@ -321,11 +327,11 @@ input[type=number] {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    transition:all 0.3s;
+    transition: all 0.3s;
 }
 
 .popup-body form button:hover {
-    transform:scale(1.05);
+    transform: scale(1.05);
 }
 
 .drop-file-area {
